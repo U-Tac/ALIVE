@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.5.0-alfa.1.min.js"></script>
+    <!-- jQuery -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIVE DESING | INTERIOR DESIGN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\slider.css">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> </head>
+
+<body>
+
+    <div class="wrap">
+
+        <!-- HEADER START -->
+        <header>
+
+            <div class="logo">
+                <img class="brand-logo" src="../img/alive_logo.svg" alt="ALIVE DESING">
+            </div>
+
+            <div class="menubar" onclick="openNav()"><span>CLIK TO MENU</span> &#9776; </div>
+
+        </header>
+        <!-- HEADER END -->
+
+        <!-- NAV START -->
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="../architecture.html">ARCHITECTURE</a>
+            <a href="../interior.html">INTERIOR DESIGN</a>
+            <a href="../visualization.html">VISUALIZATION</a>
+            <a href="../product.html">PRODUCT DESIGN</a>
+            <a href="../price.html">PRICE</a>
+            <a href="../contact.html">CONTACT</a>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- MAIN START -->
+        <main>
+
+            <!-- BREAD CRUMBS START -->
+            <ul class="breadcrumb">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../interior.html">INTERIOR DESIGN</a></li>
+                <li>SHELL</li>
+            </ul>
+            <!-- BREAD CRUMBS END -->
+
+            <!-- SECTION START -->
+            <section>
+
+                <!-- ARTICLE START -->
+                <article>
+
+                    <div class="container">
+
+                        <div class="imgcontent">
+
+                            <div id="fs-image" class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell01.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell02.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell03.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell04.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell05.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell06.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\interior\shell\shell07.jpg">
+                                </div>
+
+                                <div class="prev" onclick="plusSlides(-1)"></div>
+                                <div class="next" onclick="plusSlides(1)"></div>
+                                <div class="fs" onClick="toggleFullScreen()"></div>
+
+                            </div>
+
+                            <div class="dotnav">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+
+                            <div class="description">
+                                <h3>SHELL</h3>
+                                <P>Design of office for company "Shell" was made in collaboration with "TRK engineering" .This project used colors of the company brand book . Also, the project is executed by the requirements of Leed system.</P>
+                            </div>
+
+                            <div class="reference">
+                                <h4>Location</h4>
+                                <p>Ukraine, Kyiv</p>
+                                <h4>Client</h4>
+                                <p>Shell Retail Ukraine</p>
+                                <h4>Status</h4>
+                                <p>Realized</p>
+                                <h4>Year</h4>
+                                <p>2013</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- ARTICLE END -->
+
+            </section>
+            <!-- SECTION END -->
+
+        </main>
+        <!-- MAIN END -->
+
+        <!-- FOOTER START -->
+        <footer>
+            <p>e-mail: alive.dsg@gmail.com</p>
+            <p>tel: +38 066 035 89 95</p>
+            <p>Copyright © 2017. Alive Design. All rights reserved.</p>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- WRAP END -->
+
+    <!-- JS -->
+    <script src="..\js\menu.js"></script>
+    <script src="..\js\slideshow.js"></script>
+    <!-- JS -->
+
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.5.0-alfa.1.min.js"></script>
+    <!-- jQuery -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIVE DESING | INTERIOR DESIGN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\slider.css">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> </head>
+
+<body>
+
+    <div class="wrap">
+
+        <!-- HEADER START -->
+        <header>
+
+            <div class="logo">
+                <img class="brand-logo" src="../img/alive_logo.svg" alt="ALIVE DESING">
+            </div>
+
+            <div class="menubar" onclick="openNav()"><span>CLIK TO MENU</span> &#9776; </div>
+
+        </header>
+        <!-- HEADER END -->
+
+        <!-- NAV START -->
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../about.html">ABOUT</a>
+            <a href="../architecture.html">ARCHITECTURE</a>
+            <a href="../interior.html">INTERIOR DESIGN</a>
+            <a href="../visualization.html">VISUALIZATION</a>
+            <a href="../product.html">PRODUCT DESIGN</a>
+            <a href="../price.html">PRICE</a>
+            <a href="../contact.html">CONTACT</a>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- MAIN START -->
+        <main>
+
+            <!-- BREAD CRUMBS START -->
+            <ul class="breadcrumb">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../product.html">PRODUCT DESIGN</a></li>
+                <li>InVader</li>
+            </ul>
+            <!-- BREAD CRUMBS END -->
+
+            <!-- SECTION START -->
+            <section>
+
+                <!-- ARTICLE START -->
+                <article>
+
+                    <div class="container">
+
+                        <div class="imgcontent">
+
+                            <div id="fs-image" class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <img src="..\product\invader\invader01.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\product\invader\invader02.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\product\invader\invader03.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\product\invader\invader04.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\product\invader\invader05.jpg">
+                                </div>
+
+                                <div class="prev" onclick="plusSlides(-1)"></div>
+                                <div class="next" onclick="plusSlides(1)"></div>
+                                <div class="fs" onClick="toggleFullScreen()"></div>
+
+                            </div>
+
+                            <div class="dotnav">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+
+                            <div class="description">
+                                <h3>Concept</h3>
+                                <P>Designing InVader lamp we combined manual design process with algorithmical one.  While plafon was designed manually,  the lamp base was developed via interpolation curves. Using the algorithm in Parametric method of design gave us a possibility to develop several variations of the lamp base.</P>
+                                <p>InVader lamp was inspired by the ocean. We tried to represent in it the beauty of its deepness.</p>
+                            </div>
+
+                            <div class="reference">
+                                <h4>Team</h4>
+                                <p>Kaigorodtsev Iurii, Titarenko Lubov, Petrenyuk Iurii, Volodymyr Sapian.</p>
+                                <h4>Design</h4>
+                                <p>Volodymyr Sapian</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- ARTICLE END -->
+
+            </section>
+            <!-- SECTION END -->
+
+        </main>
+        <!-- MAIN END -->
+
+        <!-- FOOTER START -->
+        <footer>
+            <p>e-mail: alive.dsg@gmail.com</p>
+            <p>tel: +38 066 035 89 95</p>
+            <p>Copyright © 2017. Alive Design. All rights reserved.</p>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- WRAP END -->
+
+    <!-- JS -->
+    <script src="..\js\menu.js"></script>
+    <script src="..\js\slideshow.js"></script>
+    <!-- JS -->
+
+</body>
+
+</html>

@@ -1,0 +1,444 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrap {
+    border: 2px so lid red;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 font-family: "Corbert", sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@font-face {
+    font-family: Corbert;
+    /* Имя шрифта */
+    src: url(fonts/Corbert-Regular.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/*LOGO START*/
+
+.brand-logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    height: 80px;
+    overflow: hidden;
+}
+
+
+/*LOGO END*/
+
+
+/*MENU START*/
+
+.menubar {
+    float: right;
+    box-sizing: border-box;
+    display: block;
+    padding-right: 20px;
+    text-align: right;
+    line-height: 118px;
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Corbert', sans-serif;
+    font-weight: normal;
+    color: white;
+    display: block;
+    border-bottom: 1px solid white;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-right: 0px;
+    padding-right: 0;
+    /*margin-left: 50px;*/
+    border: none;
+}
+
+
+/*MENU END*/
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    background-color: yellow;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background-color: aquamarine;
+}
+
+
+/* BREAD CRUMB START */
+
+
+/* Style the list */
+
+ul.breadcrumb {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    list-style: none;
+    font-size: 17px;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    font-size: 17px;
+    color: black;
+    content: "|";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: none;
+}
+
+
+/* BREAD CRUMB END */
+
+article {
+    width: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    border: 1px solid orange;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: palegreen;
+}
+
+.imgcontent {
+    min-width: 320px;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+
+}
+
+.content {
+    min-width: 320px;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.description {
+    padding: 20px;
+    min-width: 320px;
+    flex: 2 1 300px;
+    box-sizing: border-box;
+    border: 1px solid crimson;
+}
+
+.reference {
+    /*min-width: 50%;*/
+    padding: 20px;
+    flex: 1 0.5 100px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+}
+
+.content1 {
+    min-width: 320px;
+    border: 1px solid #2af00d;
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+.content2 {
+    min-width: 320px;
+    flex: 1 1 50%;
+    border: 1px solid #d76821;
+    box-sizing: border-box;
+}
+
+.content3 {
+    min-width: 320px;
+    flex: 2 1 300px;
+    border: 1px solid #2af00d;
+    box-sizing: border-box;
+}
+
+.content4 {
+    /*min-width: 50%;*/
+    flex: 1 0.5 100px;
+    border: 1px solid #d76821;
+    box-sizing: border-box;
+}
+
+footer {
+    border: 1px solid red;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  display: none;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  display: none;
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*FullScreen Mode*/
+
+.fs {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top:20px;
+  right: 20px;
+  background-image: url("icons/fs.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+:-webkit-full-screen .fs {
+  background-image: url("icons/os.svg");
+}
+:-moz-full-screen .fs {
+  background-image: url("icons/os.svg");
+}
+:-ms-fullscreen .fs {
+  background-image: url("icons/os.svg");
+}
+:fullscreen .fs {
+  background-image: url("icons/os.svg");
+}
+
+:-webkit-full-screen .slideshow-container {
+  width: 100vw;
+}
+:-moz-full-screen .slideshow-container {
+  width: 100vw;
+}
+:-ms-fullscreen .slideshow-container {
+  width: 100vw;
+}
+:fullscreen .slideshow-container {
+  width: 100vw;
+}
+
+
+
+
+
+:-webkit-full-screen {
+background: red;
+width: 100vw;
+
+}
+
+
+
+:-moz-full-screen  {
+  background: red;
+  width: 100%;
+height: 100%
+}
+:-ms-fullscreen  {
+  background: red;
+  width: 100%;
+height: 100%
+}
+:fullscreen  {
+  background: red;
+  width: 100%;
+height: 100%
+}
+
+/*FullScreen Mode*/

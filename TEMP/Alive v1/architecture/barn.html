@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- jQuery -->
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIVE DESING | ARCHITECTURE</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\css\slider.css">
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> </head>
+
+<body>
+
+    <div class="wrap">
+
+        <!-- HEADER START -->
+        <header>
+
+            <div class="logo">
+                <img class="brand-logo" src="../img/alive_logo.svg" alt="ALIVE DESING">
+            </div>
+
+            <div class="menubar" onclick="openNav()"><span>CLIK TO MENU</span> &#9776; </div>
+
+        </header>
+        <!-- HEADER END -->
+
+        <!-- NAV START -->
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">ABOUT</a>
+            <a href="#">ARCHITECTURE</a>
+            <a href="#">INTERIOR DESIGN</a>
+            <a href="#">VISUALIZATION</a>
+            <a href="#">PRODUCT DESIGN</a>
+            <a href="#">PRICE</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- MAIN START -->
+        <main>
+
+            <!-- BREAD CRUMBS START -->
+            <ul class="breadcrumb">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ARCHITECTURE</a></li>
+                <li>BARN</li>
+            </ul>
+            <!-- BREAD CRUMBS END -->
+
+            <!-- SECTION START -->
+            <section>
+
+                <!-- ARTICLE START -->
+                <article>
+
+                    <div class="container">
+
+                        <div class="imgcontent">
+
+                            <div id="fs-image" class="slideshow-container">
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn01.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn02.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn03.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn04.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn05.jpg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn_foto1.jpeg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn_foto2.jpeg">
+                                </div>
+
+                                <div class="mySlides fade">
+                                    <img src="..\architecture\barn\barn_foto3.jpeg">
+                                </div>
+
+                                <div class="prev" onclick="plusSlides(-1)"></div>
+                                <div class="next" onclick="plusSlides(1)"></div>
+                                <div class="fs" onClick="toggleFullScreen()"></div>
+
+                            </div>
+
+                            <div class="dotnav">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(8)"></span>
+                            </div>
+                        </div>
+
+                        <div class="content">
+
+                            <div class="description">
+                                <h3>BARN</h3>
+                                <P>The idea of this project was the reconstruction the barn of 19th-century into the residential house. The new solution will not change the established historical image of the street. We decided to use colors and materials
+                                    that were used in the building earlier. We were able to successfully planning the space of the building and ennoble surrounding area.</P>
+                            </div>
+
+                            <div class="reference">
+                                <h4>Client</h4>
+                                <p>Private person</p>
+                                <h4>Status</h4>
+                                <p>Reconstruction</p>
+                                <h4>Year</h4>
+                                <p>2015</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- ARTICLE END -->
+
+            </section>
+            <!-- SECTION END -->
+
+        </main>
+        <!-- MAIN END -->
+
+        <!-- FOOTER START -->
+        <footer>
+            <p>e-mail: alive.dsg@gmail.com</p>
+            <p>tel: +38 066 035 89 95</p>
+            <p>Copyright © 2017. Alive Design. All rights reserved.</p>
+        </footer>
+        <!-- FOOTER END -->
+
+    </div>
+    <!-- WRAP END -->
+
+    <!-- JS -->
+    <script src="..\js\menu.js"></script>
+    <script src="..\js\slideshow.js"></script>
+    <!-- JS -->
+
+</body>
+
+</html>

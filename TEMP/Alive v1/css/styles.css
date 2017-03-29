@@ -1,0 +1,460 @@
+html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.wrap {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Corbert", sans-serif;
+}
+
+#start-page {
+    background-image: url(../img/fon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.clearfix {
+    clear: both;
+}
+
+@font-face {
+    font-family: Corbert;
+    /* Имя шрифта */
+    src: url(../fonts/Corbert-Regular.otf);
+    /* Путь к файлу со шрифтом */
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/*LOGO START*/
+
+.brand-logo {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    height: 80px;
+    overflow: hidden;
+}
+
+#start-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#start-logo img {
+    height: 160px;
+}
+
+
+/*LOGO END*/
+
+
+/*MENU START*/
+
+.menubar {
+    float: right;
+    box-sizing: border-box;
+    display: block;
+    padding-right: 20px;
+    text-align: right;
+    line-height: 118px;
+    font-size: 26px;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    right: 0px;
+    top: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Corbert', sans-serif;
+    font-weight: normal;
+    color: white;
+    display: block;
+    border-bottom: 1px solid white;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #818181;
+}
+
+.sidenav .closebtn {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    margin-right: 0px;
+    padding-right: 0;
+    /*margin-left: 50px;*/
+    border: none;
+}
+
+
+/*MENU END*/
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* BREAD CRUMB START */
+
+
+/* Style the list */
+
+ul.breadcrumb {
+    box-sizing: border-box;
+    padding: 0px 20px;
+    list-style: none;
+    font-size: 17px;
+}
+
+
+/* Display list items side by side */
+
+ul.breadcrumb li {
+    display: inline;
+}
+
+
+/* Add a slash symbol (/) before/behind each list item */
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    font-size: 17px;
+    color: black;
+    content: "|";
+}
+
+
+/* Add a color to all links inside the list */
+
+ul.breadcrumb li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Add a color on mouse-over */
+
+ul.breadcrumb li a:hover {
+    color: #717171;
+    text-decoration: none;
+}
+
+
+/* BREAD CRUMB END */
+
+article {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imgcontent {
+    min-width: 320px;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.content {
+    min-width: 320px;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.description {
+    padding: 20px;
+    padding-top: 0;
+    min-width: 320px;
+    flex: 2 1 300px;
+    box-sizing: border-box;
+}
+
+.reference {
+    /*min-width: 50%;*/
+    padding: 20px;
+    padding-top: 0;
+    flex: 1 0.5 100px;
+    box-sizing: border-box;
+}
+
+.avatar {
+    padding: 20px;
+    max-width: 500px;
+    min-width: 320px;
+    box-sizing: border-box;
+    flex: 1 0.5 320px;
+    text-align: justify;
+}
+
+
+/*FOTO START*/
+
+.foto {
+    width: 100%;
+}
+
+
+/*FOTO END*/
+
+.about {
+    padding: 20px;
+    padding-top: 0;
+    max-width: 750px;
+    min-width: 320px;
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    text-align: justify;
+}
+
+.contactbar {
+    padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 280px;
+    min-width: 260px;
+    box-sizing: border-box;
+    flex: 1 0.5 320px;
+    text-align: justify;
+}
+
+.content1 {
+    min-width: 320px;
+    box-sizing: border-box;
+    flex: 1 1 50%;
+    padding: 20px;
+}
+
+
+/*.content2 {
+    min-width: 320px;
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+.content3 {
+    min-width: 320px;
+    flex: 2 1 300px;
+    box-sizing: border-box;
+}
+
+.content4 {
+    min-width: 50%;
+    flex: 1 0.5 100px;
+    box-sizing: border-box;
+}*/
+
+
+/*GALLERY START*/
+
+.gallery {
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project {
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    width: 30%;
+}
+
+.project a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+
+.project a img {
+    width: 100%;
+}
+
+.project a:hover {
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*GALLERY END*/
+
+
+/*FEEDBACK FORM START*/
+
+#feedback-form {
+    display: block;
+    box-sizing: border-box;
+    min-width: 280px;
+    max-width: 700px;
+    width: 100%;
+}
+
+#feedback-form label, input, textarea {
+    display: block;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+#feedback-form input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 2px solid #818181;
+}
+
+#feedback-form textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-family: Corbert;
+    min-width: 210px;
+    border: 2px solid #818181;
+    width: 100%;
+}
+
+#feedback-form input[type="submit"] {
+    background-color: black;
+    color: white;
+    width: 100px;
+    border: 0px;
+}
+
+
+/*FEEDBACK FORM END*/
+
+footer {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: right;
+}
+
+@media screen and (max-width:700px) {
+    .avatar {
+        max-width: 100%;
+    }
+    .wrap {
+        padding: 10px;
+    }
+    .gallery {
+        padding: 0;
+    }
+    .project {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .menubar span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo {
+        display: none;
+    }
+
+    #start-logo img {
+        width: 80%;
+    }
+
+    .wrap {
+        padding: 0px;
+    }
+    header {
+        padding: 10px;
+        padding-right: 0px;
+        height: auto;
+        background-color: black;
+    }
+    .menubar {
+        color: white;
+        line-height: 26px;
+    }
+    .project {
+        width: 100%;
+    }
+
+}
